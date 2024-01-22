@@ -5,7 +5,7 @@
 
  export default defineConfig({
    plugins: [react()],
-   base:"/virtusconnect/",
+   base:"/virtus/",
  });
 
 // import { defineConfig } from 'vite';
