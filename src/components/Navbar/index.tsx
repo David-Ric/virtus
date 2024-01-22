@@ -16,15 +16,19 @@ export default function Navbar() {
     <header>
       <div className="logo"></div>
       <nav className={menuOpen ? "open" : ""}>
-        <a href="/">Home</a>
-        <a href="/#">Projetos</a>
-        <a href="/#">Clientes</a>
-        <a href="/#">Sobre-nós</a>
+        <a href="/virtus">Home</a>
+        <a href="/virtus">Projetos</a>
+        <a href="/virtus">Clientes</a>
+        <a href="/virtus">Sobre-nós</a>
       </nav>
       <Link className="login-link d-flex" to="/login">
-      <RiLoginBoxLine fontSize={20} /><h1>Entrar</h1>
+        <RiLoginBoxLine fontSize={20} />
+        <h1>Entrar</h1>
       </Link>
-      <div className={menuOpen ? " nav-btn open" : "nav-btn"} onClick={toggleMenu}>
+      <div
+        className={menuOpen ? " nav-btn open" : "nav-btn"}
+        onClick={toggleMenu}
+      >
         {menuOpen ? <FaTimes /> : <GiHamburgerMenu />}
       </div>
     </header>
